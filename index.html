@@ -339,7 +339,18 @@
                     </li>
                 </ul>
             </div>
+            
+            <div class="form-container">
+                <form class="subscribe-form">
+                    <h3>Подпишитесь на рассылку</h3>
+                    <label for="email"></label>
+                    <input class="subscribe-form-input" type="text" name="email" id="email" placeholder="E-mail" autocomplete="off">
+                    <button type="submit" class="email-send-btn">Подписаться</button>
+                </form>
+            </div>
         </div>
+        
+
     </footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -349,6 +360,26 @@
             </svg> -->
             <img src="./images/svg/close.svg" alt="Иконка Close" width="30px" height="30px">
         </button>
+        <form class="modal-form">
+            <h3>Оставьте свои данные, мы вам перезвоним</h3>
+            <div class="modal-form-input">
+                <label for="name" class="modal-form-label">Имя</label>
+                <input type="text" id="name" name="user-name">
+            </div>
+            <div class="modal-form-input">
+                <label for="tel" class="modal-form-label">Телефон</label>
+                <input type="tel" id="tel" name="user-phonenumber">
+            </div>
+            <div class="modal-form-input">
+                <label for="mail" class="modal-form-label">Почта</label>
+                <input type="email" id="mail" name="user-mail">
+            </div>
+            <div class="modal-form-input">
+                <label for="comment" class="modal-form-label">Комментарий</label>
+                <textarea name="user-comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Отправить</button>
+        </form>
     </div>
 </div>
 <script src="./modal.js"></script>

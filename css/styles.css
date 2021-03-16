@@ -248,6 +248,8 @@ h3 {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
 }
 /* ==== /TAGLINE ==== */
 
@@ -521,6 +523,71 @@ h3 {
 
 .footer .social-icon {
   --color1: var(--third-color);
+}
+
+.footer .form-container {
+  margin-left: 93px;
+  margin-top: 12px;
+}
+
+.subscribe-form h3 {
+  color: var(--third-color);
+  margin-bottom: 20px;
+}
+
+.subscribe-form input {
+  width: 358px;
+  height: 50px;
+  outline-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  color: var(--third-color);
+  transition: border-color var(--animation-time) var(--timing-function);
+}
+
+.subscribe-form input:focus {
+  border-color: var(--accent-color);
+}
+
+.subscribe-form input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form .email-send-btn {
+  position: relative;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--third-color);
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  padding: 10px 62px 10px 29px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.email-send-btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 29px;
+  transform: translateY(50%);
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon-send.svg);
+  /* margin-left: 10px; */
 }
 
 /* ==== /FOOTER ==== */
